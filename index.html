@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتائج الطلاب</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/logo.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="yaya">
+            <img src="./assets/img/Untitled-3 (1).png" alt="yaya">
+        </div>
+      
+    </div>
+      <div class="bg-image"></div>
+    <div class="container mt-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="teacherCode" class="form-label">رمز الأستاذ:</label>
+                        <input type="password" id="teacherCode" class="form-control" placeholder="أدخل رمز الأستاذ">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="filterInstitute" class="form-label">المعهد:</label>
+                        <div class="custom-select" id="instituteSelectContainer">
+                            <div class="selected-option">اختر المعهد <i class="fas fa-chevron-down"></i></div>
+                            <ul class="options" id="filterInstitute">
+                                <li data-value="اليمان"><i class="fas fa-school"></i> معهد اليمان</li>
+                                <li data-value="الإدريسي"><i class="fas fa-university"></i> معهد الإدريسي</li>
+                                <li data-value="الخليل"><i class="fas fa-landmark"></i> معهد الخليل</li>
+                                <li data-value="خطوة"><i class="fas fa-road"></i> معهد خطوة</li>
+                            </ul>
+                            <input type="hidden" name="filterInstituteHidden" id="filterInstituteHidden">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="division" class="form-label">الشعبة:</label>
+                        <div class="custom-select" id="divisionSelectContainer">
+                            <div class="selected-option">اختر الشعبة <i class="fas fa-chevron-down"></i></div>
+                            <ul class="options" id="division"></ul>
+                            <input type="hidden" name="filterDivisionHidden" id="filterDivisionHidden">
+                        </div>
+                    </div>
+                    
+
+                    <div class="d-grid gap-2">
+                        <button type="button" id="searchButton" class="btn btn-primary">عرض النتائج</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="resultsContainer" class="mt-4">
+            <p class="text-center text-muted1">يرجى إدخال رمز الأستاذ لعرض النتائج.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
