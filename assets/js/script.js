@@ -16,54 +16,78 @@ const csvFiles =
     ///////////// الانكليزي \\\\\\\\\\\\
     //data سامر محاحي
     '0932863150': {
-        'اليمان': './data_en/data_samer_yaman.csv',
-        'الإدريسي': './data_en/data_samer_idrisi.csv',
-        'الخليل': './data_en/data_samer_khalil.csv',
-        'خطوة': './data_en/2step.csv',
+        'اليمان': './data/data_samer_yaman.csv',
+        'الإدريسي': './data/data_samer_idrisi.csv',
+        'الخليل': './data/data_samer_khalil.csv',
+        'خطوة': './data/samer_step.csv',
     },
     // data عبد الله سلطجي
     '0933183934': {
-        'اليمان': './data_en/data_abdullah_yaman.csv',
+        'اليمان': './data/data_abdullah_yaman.csv',
     },
     // data رامي حلاق
     '0944447586': {
-        'اليمان': './data_en/data_rami_yaman.csv',
-        'الإدريسي': './data_en/data_rami_idrisi.csv',
-        'الخليل': './data_en/data_rami_khalil.csv',
+        'اليمان': './data/data_rami_yaman.csv',
+        'الإدريسي': './data/data_rami_idrisi.csv',
+        'الخليل': './data/data_rami_khalil.csv',
+    },
+     // data الاستاذ ياسر  ريحها
+    '0944994584': {
+        'الخليل': './data/art_khalil_en.csv',
+        'خطوة': './data/step_en_art.csv',
+    },
+     // data الاستاذ فاطمة  شحادة
+     '0962376869': {
+        'الخليل': './data/art_khalil_en.csv',
     },
     ///////////// الفرنسي \\\\\\\\\\\\
      //data عبد الوهاب الكلاوي
  '0950500602': {
-    'اليمان': './data_fr/data_samer_yaman.csv',
-    'الإدريسي': './data_fr/data_samer_idrisi.csv',
-    'الخليل': './data_fr/data_samer_khalil.csv',
+    'اليمان': './data/data_kalawe_yaman.csv',
+    'الإدريسي': './data/data_kalawe_idrisi.csv',
+    'الخليل': './data/data_kalawe_khalil.csv',
 },
 // data حسن علاوي
 '0944085565': {
-    'اليمان': './data_fr/data_hassan_yaman.csv',
+    'اليمان': './data/data_hassan_yaman.csv',
 },
 // data عامر حداد
 '0983232446': {
-    'خطوة': './data_fr/data_hadad_step.csv',
-    'الإدريسي': './data_fr/data_hadad_idrisi.csv',
-    'الخليل': './data_fr/data_hadad_khalil.csv',
+    'خطوة': './data/step_fr_h.csv',
+    'الإدريسي': './data/data_hadad_idrisi.csv',
+    'الخليل': './data/data_hadad_khalil.csv',
 },
+    // data الاستاذ حسن  الكردي
+    '0955697844': {
+        'الخليل': './data/fr_art_khalil.csv',
+    },
  ///////////// العربي \\\\\\\\\\\\
      //data عمار مرزوق
      '0968394081': {
-        'اليمان': './data_ar/data_ammar&tarek_yaman.csv',
-        'الإدريسي': './data_ar/data_ammar&tarek_idrisi.csv',
-        'الخليل': './data_ar/data_ammar&tarek_khalil.csv',
-        'خطوة': './data_ar/data_ammar&tarek_step.csv',
+        'اليمان': './data/ar_yaman.csv',
+        'الإدريسي': './data/ar_idrisi.csv',
+        'الخليل': './data/ar_khalil.csv',
+        'خطوة': './data/step_ar.csv',
     },
     // data الاستاذ طارق الصعيدي
     'انا بحبك يا ثائر': {
-     'اليمان': './data_ar/data_ammar&tarek_yaman.csv',
-     'الإدريسي': './data_ar/data_ammar&tarek_idrisi.csv',
-     'الخليل': './data_ar/data_ammar&tarek_khalil.csv',
-     'خطوة': './data_ar/data_ammar&tarek_step.csv',
+        'اليمان': './data/ar_yaman.csv',
+        'الإدريسي': './data/ar_idrisi.csv',
+        'الخليل': './data/ar_khalil.csv',
+        'خطوة': './data/step_ar.csv',
     },
-    
+    // data الاستاذ احمد الطحان
+    '0990814509': {
+        'خطوة': './data/step_ar_art.csv',
+    },
+    // data الاستاذ عامر  صوان
+    '0944725070': {
+        'الخليل': './data/ar_khalil.csv',
+    },
+        // data الاستاذ خالد عثمان
+        '0945062857': {
+            'الخليل': './data/ar_khalil.csv',
+        },
 };
 
 // بيانات المعاهد والشعب
@@ -92,6 +116,19 @@ const teacherData = {
             'الخليل': ['شعبة ثالثة إناث', 'شعبة ثانية ذكور']
         }
     },
+    '0944994584': {
+        name: 'ياسر ريحها',
+        divisions: {
+              'خطوة': [ 'شعبة أدبي'],
+              'الخليل':['شعبة اناث ادبي'],
+        }
+    }, 
+    '0962376869': {
+        name: 'فاطمة شحادة',
+        divisions: {
+              'الخليل':['شعبة ذكور ادبي'],
+        }
+    },
     //  فرنسي
     '0950500602':{
         name: 'عبد الوهاب الكلاوي',
@@ -112,8 +149,14 @@ const teacherData = {
         divisions: {
             'اليمان': ['شعبة اولى أدبي إناث', 'شعبة ثانية إناث أدبي', 'شعبة ثالثة ذكور أدبي'],
             'الإدريسي': ['شعبة ثانية إناث', 'الشعبة اولى أدبي'],
-            'الخليل': ['شعبة ثالثة إناث', 'شعبة رابعة إناث','شعبة ثانية ذكور',],
-            'خطوة': ['شعبة اولى']
+            'الخليل': ['شعبة ثالثة إناث', 'شعبة رابعة إناث','شعبة ثانية ذكور','شعبة اناث ادبي',],
+            'خطوة': ['شعبة اولى','الشعبة أدبي']
+        }
+    },
+     '0955697844': {
+        name: 'حسن الكردي', 
+        divisions: {
+            'الخليل': ['شعبة ذكور ادبي',],
         }
     },
      //  عربي
@@ -133,6 +176,25 @@ const teacherData = {
             'الإدريسي': ['شعبة اولى إناث', 'شعبة ثانية إناث', 'شعبة اولى ذكور','الشعبة اولى أدبي',],
             'الخليل': ['شعبة اولى إناث', 'شعبة ثانية إناث', 'شعبة ثالثة إناث', 'شعبة رابعة إناث','شعبة اولى ذكور','شعبة ثانية ذكور', ],
             'خطوة': ['شعبة اولى']
+        }
+    },
+    
+    '0944725070': {
+        name: 'عامر صوان', 
+        divisions: {
+            'الخليل': ['شعبة ثالثة إناث','شعبة ثانية ذكور',],
+        }
+    },
+    '0945062857': {
+        name: 'خالد عثمان', 
+        divisions: {
+            'الخليل': ['شعبة ذكور ادبي','شعبة اناث ادبي',],
+        }
+    },
+    '0990814509': {
+        name: 'احمد الطحان', 
+        divisions: {
+            'خطوة': ['شعبة أدبي',],
         }
     },
 
@@ -272,7 +334,7 @@ function displayResults(teacherCode, division) {
             table.appendChild(tr);
         });
 
-        resultsContainer.innerHTML = `<h3 class="text-center" style="color: black; margin: 20px 0;">نتائج الأستاذ ${teacherData[teacherCode].name}</h3>`;
+        resultsContainer.innerHTML = `<h3 class="text-center" style="color: black; margin: 20px 0;">نتائج المدرس: ${teacherData[teacherCode].name}</h3>`;
         resultsContainer.appendChild(table);
     }, 5000); // تأخير زمني بمقدار 5 ثوانٍ
 }
