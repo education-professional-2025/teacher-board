@@ -482,8 +482,8 @@ h1{
             color: white;
             text-align: center;
             background-color: #000; /* خلفية سوداء */
-            padding: 10px;
             border-radius: 5px;
+            padding: 10px;
             margin: 10px 0;
         }
 

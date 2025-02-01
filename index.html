@@ -23,26 +23,26 @@
             <div class="card-body">
                 <form>
                     <div class="mb-3">
-                        <label for="teacherCode" class="form-label">رمز الأستاذ:</label>
+                        <label for="teacherCode" class="form-label"><i class="fas fa-user-lock"></i> رمز الأستاذ: </li></label>
                         <input type="password" id="teacherCode" class="form-control" placeholder="أدخل رمز الأستاذ">
                     </div>
 
                     <div class="mb-3">
-                        <label for="filterInstitute" class="form-label">المعهد:</label>
+                        <label for="filterInstitute" class="form-label"><i class="fas fa-university"></i></i> المعهد:</label>
                         <div class="custom-select" id="instituteSelectContainer">
                             <div class="selected-option">اختر المعهد <i class="fas fa-chevron-down"></i></div>
                             <ul class="options" id="filterInstitute">
                                 <li data-value="اليمان"><i class="fas fa-school"></i> معهد اليمان</li>
-                                <li data-value="الإدريسي"><i class="fas fa-university"></i> معهد الإدريسي</li>
-                                <li data-value="الخليل"><i class="fas fa-landmark"></i> معهد الخليل</li>
-                                <li data-value="خطوة"><i class="fas fa-road"></i> معهد خطوة</li>
+                                <li data-value="الإدريسي"><i class="fas fa-school"></i> معهد الإدريسي</li>
+                                <li data-value="الخليل"><i class="fas fa-school"></i> معهد الخليل</li>
+                                <li data-value="خطوة"><i class="fas fa-school"></i> معهد خطوة</li>
                             </ul>
                             <input type="hidden" name="filterInstituteHidden" id="filterInstituteHidden">
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="division" class="form-label">الشعبة:</label>
+                        <label for="division" class="form-label"><i class="fas fa-bell-school-slash"></i> الشعبة:</label>
                         <div class="custom-select" id="divisionSelectContainer">
                             <div class="selected-option">اختر الشعبة <i class="fas fa-chevron-down"></i></div>
                             <ul class="options" id="division"></ul>
